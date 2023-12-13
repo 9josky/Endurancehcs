@@ -27,9 +27,7 @@ function Contacts() {
               <h6 className="f_p f_size_20 t_color3 f_500 mb_20">
                 Office Address
               </h6>
-              <p className="f_400 f_size_15">
-                Melbourne’s GPO 434 Bourke St. Dhaka VIC 3074, Australia
-              </p>
+              <p className="f_400 f_size_15">9310 Daly CT Laurel, MD 20723</p>
             </div>
             <div className="contact_info_item">
               <h6 className="f_p f_size_20 t_color3 f_500 mb_20">
@@ -37,15 +35,15 @@ function Contacts() {
               </h6>
               <p className="f_400 f_size_15">
                 <span className="f_400 t_color3">Phone:</span>{" "}
-                <a href="tel:3024437488">(+096) 302 443 7488</a>
+                <a href="tel:3024437488">(204) 564 0051 </a>
               </p>
-              <p className="f_400 f_size_15">
+              {/* <p className="f_400 f_size_15">
                 <span className="f_400 t_color3">Fax:</span>{" "}
                 <a href="tel:3024437488">(+096) 204 353 6684</a>
-              </p>
+              </p> */}
               <p className="f_400 f_size_15">
                 <span className="f_400 t_color3">Email:</span>{" "}
-                <a href="mailto:saasland@gmail.com">saasland@gmail.com</a>
+                <a href="mailto:saasland@gmail.com">ehcsonline1@gmail.com</a>
               </p>
             </div>
           </div>

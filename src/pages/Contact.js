@@ -14,8 +14,8 @@ function Contact() {
       <Breadcrumb
         breadcrumbClass="breadcrumb_area"
         imgName="breadcrumb/banner_bg.png"
-        Ptitle="Contac Us"
-        Pdescription="Why I say old chap that is spiffing off his nut arse pear shaped plastered Jeffrey bodge barney some dodgy.!!"
+        Ptitle="Contact Us"
+        // Pdescription="Why I say old chap that is spiffing off his nut arse pear shaped plastered Jeffrey bodge barney some dodgy.!!"
       />
       <Contacts />
     </div>

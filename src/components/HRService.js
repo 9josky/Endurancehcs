@@ -14,8 +14,8 @@ function HRService() {
       </div>
       <div className="container">
         <h2 className="f_size_30 f_600 t_color3 l_height45 text-center mb_90">
-          SaasLand is built for designers like you.
-          <br /> With useful features, an intuitive interface.
+          With utmost compassion we provide the following services to our
+          clients:.
         </h2>
         <div className="row p_service_info">
           {ServiceData.HRService.map((item) => {

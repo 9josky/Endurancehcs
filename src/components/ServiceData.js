@@ -83,49 +83,49 @@ const ServiceData = {
   HRService: [
     {
       id: "1",
-      HRtitles: "24hrs Care",
+      HRtitles: "Personal Care",
       HRdescription:
-        "Bog cheeky bugger blow off only a quid grub he legged it porkies tosser young delinquent argy-bargy.",
+        "Bathing, Grooming, Personal hygiene, Mobility assistance, Meal preparations, Bed preparation, Incontinence care, Laundry, Administrative assistance, Medication monitoring and reminder, etc.",
       Hicon: "panel",
       rclass: "pr_70",
       iclass: "icon_one",
     },
     {
       id: "2",
-      HRtitles: "Hourly Home Care",
+      HRtitles: "Respite Care",
       HRdescription:
-        "Bog cheeky bugger blow off only a quid grub he legged it porkies tosser young delinquent argy-bargy.",
+        "Day and overnight respite care, Medical appointments escort, Movies companion, etc.",
       Hicon: "layout-grid2",
       rclass: "pl_50 pr_20",
       iclass: "icon_two",
     },
     {
       id: "3",
-      HRtitles: "Live-In Care",
+      HRtitles: "Cosmetic Care",
       HRdescription:
-        "Bog cheeky bugger blow off only a quid grub he legged it porkies tosser young delinquent argy-bargy.",
+        "Massages and range motion activities, Helping with hairdressing and barbing, etc.",
       Hicon: "fullscreen",
       rclass: "pl_70",
       iclass: "icon_three",
     },
     {
       id: "4",
-      HRtitles: "Overnight Care",
+      HRtitles: "Other Services",
       HRdescription:
-        "Bog cheeky bugger blow off only a quid grub he legged it porkies tosser young delinquent argy-bargy.",
+        "Running errands, In and out of town accompaniment, Pet care, Escort to stores, parks, and community events, Fall prevention and general safety guidance, Transportation, Wound care, Skilled nursing care, etc.",
       Hicon: "vector",
       rclass: "pr_70",
       iclass: "icon_four",
     },
-    {
-      id: "5",
-      HRtitles: "Veterans Home Care",
-      HRdescription:
-        "Bog cheeky bugger blow off only a quid grub he legged it porkies tosser young delinquent argy-bargy.",
-      Hicon: "cloud-down",
-      rclass: "pl_50 pr_20",
-      iclass: "icon_five",
-    },
+    // {
+    //   id: "5",
+    //   HRtitles: "Veterans Home Care",
+    //   HRdescription:
+    //     "Bog cheeky bugger blow off only a quid grub he legged it porkies tosser young delinquent argy-bargy.",
+    //   Hicon: "cloud-down",
+    //   rclass: "pl_50 pr_20",
+    //   iclass: "icon_five",
+    // },
     // {
     //   id: "6",
     //   HRtitles: "Iterate at Speed",

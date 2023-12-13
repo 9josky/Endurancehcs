@@ -11,7 +11,7 @@ function NavContact() {
       }}
     >
       <h3>Speak with us 24/7</h3>
-      <span>(301) 363-258</span>
+      <span>(204) 564-0051</span>
     </div>
   );
 }

@@ -4,6 +4,8 @@ import EventBanner from "../components/EventBanner";
 import EventTeam from "../components/EventTeam";
 import HomeService from "../components/HomeService";
 import NavContact from "../components/NavContact";
+import WelcomeContent from "../components/WelcomeContent";
+import ServiceContent from "../components/ServiceContent";
 
 function Home() {
   return (
@@ -16,7 +18,9 @@ function Home() {
       />
       <EventBanner />
       <EventTeam />
-      <HomeService />
+      <WelcomeContent />
+      <ServiceContent />
+      {/* <HomeService /> */}
     </div>
   );
 }

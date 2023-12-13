@@ -1,7 +1,12 @@
 import React from "react";
 import { useSpring, animated } from "react-spring";
 
-function Breadcrumb({ Ptitle, Pdescription, breadcrumbClass, imgName }) {
+function Breadcrumb({
+  Ptitle,
+  Pdescription,
+  // breadcrumbClass,
+  backgroundColor,
+}) {
   // Define the spring animation
   const fadeInUp = useSpring({
     opacity: 1,
@@ -10,12 +15,16 @@ function Breadcrumb({ Ptitle, Pdescription, breadcrumbClass, imgName }) {
   });
 
   return (
-    <section className={`${breadcrumbClass}`}>
-      <img
-        className="breadcrumb_shap"
-        src={require("../img/" + imgName)}
-        alt=""
-      />
+    <section
+      style={{
+        backgroundColor: "#002664",
+        height: "30vh",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
       <div className="container">
         <div className="breadcrumb_content text-center">
           {/* Apply the spring animation to the animated.div */}

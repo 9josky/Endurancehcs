@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import Sticky from "react-stickynode";
+import logo1 from "../img/No5.svg";
 
 function CustomeNavBar({ mClass, nClass, cClass, slogo, hbtnClass }) {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -15,8 +16,12 @@ function CustomeNavBar({ mClass, nClass, cClass, slogo, hbtnClass }) {
         <nav className={`navbar navbar-expand-lg menu_one ${mClass}`}>
           <div className={`container ${cClass}`}>
             <Link className={`navbar-brand ${slogo}`} to="/">
-              <img src={require("../img/logo2.png")} alt="" />
-              <img src={require("../img/logo.png")} alt="logo" />
+              <img src={require("../img/No5copy.png")} alt="" height={"60px"} />
+              <img
+                src={require("../img/No1copy.png")}
+                alt="logo"
+                height={"60px"}
+              />
             </Link>
             <button
               className={`navbar-toggler ${isNavOpen ? "" : "collapsed"}`}
@@ -54,13 +59,13 @@ function CustomeNavBar({ mClass, nClass, cClass, slogo, hbtnClass }) {
                 </li>
                 <li className="nav-item">
                   <NavLink
-                    title="About Us"
+                    title="Our Story"
                     className="nav-link"
-                    to="/about"
+                    to="/story"
                     exact
                     onClick={toggleNav}
                   >
-                    About Us
+                    Our Story
                   </NavLink>
                 </li>
                 <li className="nav-item">
