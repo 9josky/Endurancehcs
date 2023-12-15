@@ -6,6 +6,7 @@ import ServiceData from "../components/ServiceData";
 import AgencyAbout from "../components/AgencyAbout";
 import NavContact from "../components/NavContact";
 import Content from "../components/Content";
+import Footer from "../components/Footer";
 
 function About() {
   return (
@@ -31,6 +32,7 @@ function About() {
       />
       <AboutUsInfo />
       {/* <AgencyAbout ServiceData={ServiceData} /> */}
+      <Footer />
     </div>
   );
 }

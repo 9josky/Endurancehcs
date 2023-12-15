@@ -3,6 +3,7 @@ import CustomeNavBar from "../components/CustomeNavBar";
 import Breadcrumb from "../components/Breadcrumb";
 import Teams from "../components/Teams";
 import NavContact from "../components/NavContact";
+import Footer from "../components/Footer";
 
 function Team() {
   return (
@@ -20,6 +21,7 @@ function Team() {
         Pdescription="Why I say old chap that is spiffing off his nut arse pear shaped plastered Jeffrey bodge barney some dodgy.!!"
       />
       {/* <Teams /> */}
+      <Footer />
     </div>
   );
 }

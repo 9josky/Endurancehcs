@@ -2,6 +2,7 @@ import React from "react";
 import CustomeNavBar from "../components/CustomeNavBar";
 import Breadcrumb from "../components/Breadcrumb";
 import Contacts from "../components/Contacts";
+import Footer from "../components/Footer";
 
 function Contact() {
   return (
@@ -18,6 +19,7 @@ function Contact() {
         // Pdescription="Why I say old chap that is spiffing off his nut arse pear shaped plastered Jeffrey bodge barney some dodgy.!!"
       />
       <Contacts />
+      <Footer />
     </div>
   );
 }

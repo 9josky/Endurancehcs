@@ -5,6 +5,7 @@ import HRService from "../components/HRService";
 import ServiceData from "../components/ServiceData";
 import NavContact from "../components/NavContact";
 import HRServiceItems from "../components/HRServiceItems";
+import Footer from "../components/Footer";
 
 function Service() {
   return (
@@ -20,6 +21,7 @@ function Service() {
         // Pdescription="Why I say old chap that is spiffing off his nut arse pear shaped plastered Jeffrey bodge barney some dodgy.!!"
       />
       <HRService ServiceData={ServiceData} />
+      <Footer />
     </div>
   );
 }
