@@ -159,7 +159,7 @@ const FooterData = {
       icon: "ti-pinterest",
     },
   ],
-  copywrite: "© SaasLand Inc.. 2019 All rights reserved.",
+  copywrite: "Endurance Healthcare Services 2023",
   TestimonialText: [
     {
       id: 1,

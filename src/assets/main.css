@@ -7843,6 +7843,22 @@ button:focus {
   z-index: 1;
 }
 
+.image-container {
+  display: inline-block;
+}
+
+.rounded-image {
+  width: 400px;
+  height: 400px;
+  border-radius: 10px;
+}
+
+/* Hide the image on mobile devices */
+@media (max-width: 767px) {
+  .rounded-image {
+    display: none;
+  }
+}
 /*============= agency_service_area css =============*/
 .agency_service_area {
   padding: 135px 0px 140px;
@@ -23236,7 +23252,7 @@ a .h_head:hover {
 
 .footer_top {
   border-bottom: 1px solid #e0e3ef;
-  padding: 115px 0px 100px;
+  padding: 15px 0px 15px;
 }
 
 .f_widget .widget-wrap {
@@ -23406,7 +23422,7 @@ a .h_head:hover {
 
 .f_social_icon_two a {
   font-size: 14px;
-  color: #969db4;
+  color: #ffffff;
   margin: 0px 8px;
 }
 
@@ -23496,19 +23512,19 @@ a .h_head:hover {
 
 .footer_three .footer_top {
   border-color: #252130;
-  color: #b2b6c4;
+  color: #ffffff;
 }
 
 .footer_three .footer_top p {
-  color: #b2b6c4;
+  color: #ffffff;
 }
 
 .footer_three .footer_top .f-title {
-  color: #fff;
+  color: #ffff;
 }
 
 .footer_three .footer_top .f_widget.about-widget .f_list li a {
-  color: #b2b6c4;
+  color: #ffffff;
 }
 
 .footer_three .footer_top .f_widget.about-widget .f_list li a:before {
@@ -24170,11 +24186,11 @@ a .h_head:hover {
 
 /*============ new_footer_area css ===========*/
 .new_footer_area {
-  background: #fbfbfd;
+  background: #002664;
 }
 
 .new_footer_area .footer_bottom {
-  padding-top: 5px;
+  /* padding-top: 5px; */
   padding-bottom: 50px;
 }
 
@@ -26508,6 +26524,30 @@ a .h_head:hover {
 .h_footer_track:before,
 .h_footer_track:after {
   display: none;
+}
+
+/* Add this to your CSS file */
+
+.falling-title {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.title {
+  transform: translateY(0);
+  transition: transform 4s ease-in-out;
+  position: absolute;
+  opacity: 0;
+}
+
+.title.visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.title.hidden {
+  transform: translateY(-100%);
 }
 
 /*============= chat_clients_area css ===========*/

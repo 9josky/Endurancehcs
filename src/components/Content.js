@@ -1,10 +1,26 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import FallingTitle from "./FallingTitle";
 
-function Content({ header, content, buttn, link, icon, list, showButton }) {
+function Content({
+  header,
+  content,
+  buttn,
+  link,
+  icon,
+  list,
+  showButton,
+  innerTitle,
+}) {
   return (
-    <div className="container" style={{ paddingTop: "10px" }}>
-      <h2>{header}</h2>
+    <div style={{ paddingTop: "10px" }}>
+      <h1>{header}</h1>
       <p>{content}</p>
+      <div
+        // className="falling-title-container"
+        style={{ height: "10px", margin: "20px 0" }}
+      >
+        {innerTitle}
+      </div>
       <ul>{list}</ul>
       {showButton && (
         <div
@@ -20,5 +36,22 @@ function Content({ header, content, buttn, link, icon, list, showButton }) {
     </div>
   );
 }
+
+// function FallingTitle({ titles = [], currentTitleIndex }) {
+//   return (
+//     <div className="falling-title">
+//       {titles &&
+//         titles.map((title, index) => (
+//           <div
+//             key={index}
+//             className={`title ${index === currentTitleIndex ? "visible" : ""}`}
+//           >
+//             {Array.isArray(title) && // Check if title is an array
+//               title.map((word, i) => <span key={i}>{word}</span>)}
+//           </div>
+//         ))}
+//     </div>
+//   );
+// }
 
 export default Content;

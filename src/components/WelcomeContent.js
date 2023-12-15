@@ -4,7 +4,7 @@ import Content from "./Content";
 function WelcomeContent() {
   return (
     <>
-      <div style={{ marginBottom: "15px" }}>
+      <div className="container" style={{ marginBottom: "15px" }}>
         <Content
           header="Welcome to Endurance Healthcare Services"
           content="Where compassionate healthcare thrives. We are licensed in the state of Maryland to provide quality in-home medical and non-medical services that support elderly, age or disability restricted individuals. Our number one priority is the comfortability of the clients we served and that is why we ensure compatibility of our healthcare providers to all clients assigned to them.
