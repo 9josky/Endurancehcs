@@ -14,8 +14,10 @@ function CustomeNavBar({ mClass, nClass, cClass, slogo, hbtnClass }) {
     <Sticky top={0} innerZ={9999} activeClass="navbar_fixed">
       <header className="header_area">
         <nav className={`navbar navbar-expand-lg menu_one ${mClass}`}>
-          <div className={`container ${cClass}`}>
-            <Link className={`navbar-brand ${slogo}`} to="/">
+          <div
+            className={`container ${cClass}  d-flex align-items-center justify-content-between`}
+          >
+            <Link className={`navbar-brand ${slogo} flex-grow-1`} to="/">
               <img src={require("../img/No5copy.png")} alt="" height={"60px"} />
               <img
                 src={require("../img/No1copy.png")}
@@ -77,6 +79,17 @@ function CustomeNavBar({ mClass, nClass, cClass, slogo, hbtnClass }) {
                     onClick={toggleNav}
                   >
                     Team
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink
+                    title="Career Opportunities"
+                    className="nav-link"
+                    to="/career"
+                    exact
+                    onClick={toggleNav}
+                  >
+                    Career
                   </NavLink>
                 </li>
                 <li className="nav-item">

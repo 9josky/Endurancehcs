@@ -1,93 +1,63 @@
 import React, { useState, useEffect } from "react";
 
 const titleList = [
-  ["Personal Care"],
-  ["Respite Care"],
-  ["Cosmetic Care"],
-  ["Other services"],
+  "Personal Care",
+  "Respite Care",
+  "Cosmetic Care",
+  "Other services",
 ];
 
-const getRandomIndex = () => Math.floor(Math.random() * titleList.length);
-
 const FallingTitle = () => {
-  const [currentTitleIndex, setCurrentTitleIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      const randomIndex = getRandomIndex();
-      setCurrentTitleIndex(randomIndex);
-    }, 3000); // Change the interval if needed
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % 4); // Adjust the number based on the number of items
+    }, 3000); // 3 seconds delay for each element
 
     return () => clearInterval(interval);
   }, []);
 
   return (
-    // <div
-    //   //   className="falling-title"
-    //   style={{ display: "flex", flexDirection: "column", position: "relative" }}
-    // >
+    // <ul className="list">
     //   {titleList.map((title, index) => (
-    //     <div
+    //     <li
     //       key={index}
-    //       //   className="title"
+    //       className={index === currentTitleIndex ? "visible" : ""}
     //       style={{
-    //         transform: `translateY(${index === currentTitleIndex ? 0 : -100}%)`,
-    //         transition: "transform 1s ease-in-out",
-    //         position: "absolute",
-    //         opacity: index === currentTitleIndex ? 1 : 0,
+    //         transition: "opacity 1s ease-in-out",
+    //         fontSize: "24px",
+    //         color: "#002664",
     //       }}
     //     >
-    //       {title.map((word, i) => (
-    //         <span
-    //           key={i}
-    //           style={{
-    //             fontSize: "30px",
-    //             color: "#002664",
-    //             fontWeight: "bold",
-    //             display: "inline-block",
-    //           }}
-    //         >
-    //           {word}
-    //         </span>
-    //       ))}
-    //     </div>
+    //       {title}
+    //     </li>
     //   ))}
+    // </ul>
+    // <div id="scroll-container">
+    //   <div id="scroll-text">
+    //     <div className="text" style={{ fontSize: "30px", color: "#002664" }}>
+    //       Personal Care
+    //     </div>
+    //     <div className="text" style={{ fontSize: "30px", color: "#002664" }}>
+    //       Respite Care
+    //     </div>
+    //     <div className="text" style={{ fontSize: "30px", color: "#002664" }}>
+    //       Cosmetic Care
+    //     </div>
+    //     <div className="text" style={{ fontSize: "30px", color: "#002664" }}>
+    //       Other services
+    //     </div>
+    //   </div>
     // </div>
-
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        position: "relative",
-        // overflow: "hidden",
-      }}
-      className="container"
-    >
-      {titleList.map((title, index) => (
-        <div
-          key={index}
-          style={{
-            transform: `translateX(${index === currentTitleIndex ? 0 : 100}%)`,
-            transition: "transform 3s ease-in-out, opacity 1s ease-in-out",
-            position: "absolute",
-            opacity: index === currentTitleIndex ? 1 : 0,
-          }}
-        >
-          {title.map((word, i) => (
-            <span
-              key={i}
-              style={{
-                fontSize: "30px",
-                color: "#002664",
-                fontWeight: "bold",
-                display: "inline-block",
-              }}
-            >
-              {word}
-            </span>
-          ))}
-        </div>
-      ))}
+    // <div id="scroll-cont">
+    <div className="scroll-tex">
+      <div className="text">
+        <span>Personal Care</span>
+        <span style={{ paddingLeft: "50px" }}>Respite Care</span>
+        <span style={{ paddingLeft: "50px" }}>Cosmetic Care</span>
+        <span style={{ paddingLeft: "50px" }}>Other services</span>
+      </div>
     </div>
   );
 };

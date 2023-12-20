@@ -17,7 +17,7 @@ function AboutUsInfo() {
           <div className="col-lg-4 col-sm-6">
             <animated.div style={fadeInUp}>
               <AboutUsInfoComp
-                iShap="icon_shape1.png"
+                // iShap="icon_shape1.png"
                 Sicon="ti-panel"
                 text="Our Vision"
                 description="Providing a compassionate healthcare service that surpasses the expectations of our clients in other to help them live the best of their lives. Nobody can live forever, but Endurance gives care that makes clients live the best of their lives."
@@ -29,7 +29,7 @@ function AboutUsInfo() {
           <div className="col-lg-4 col-sm-6">
             <animated.div style={{ ...fadeInUp, delay: 200 }}>
               <AboutUsInfoComp
-                iShap="icon_shape2.png"
+                // iShap="icon_shape2.png"
                 Sicon="ti-layout-grid2"
                 text="Our Mission"
                 description="We are committed to providing the best possible caregiving experience that is tailored after the needs of clients served using highly trained and verified caregivers which will make it possible for clients served to lead dignified and independent lifestyles.
@@ -42,7 +42,7 @@ function AboutUsInfo() {
           <div className="col-lg-4 col-sm-6">
             <animated.div style={{ ...fadeInUp, delay: 400 }}>
               <AboutUsInfoComp
-                iShap="icon_shape3.png"
+                // iShap="icon_shape3.png"
                 Sicon="ti-gallery"
                 text="Our Principles"
                 description="The best"

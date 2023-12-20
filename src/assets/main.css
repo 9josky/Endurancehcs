@@ -682,12 +682,12 @@ button:focus {
 .app_btn {
   -webkit-box-shadow: 0px 20px 30px 0px rgba(12, 0, 46, 0.1);
   box-shadow: 0px 20px 30px 0px rgba(12, 0, 46, 0.1);
-  background-color: #4069eb;
+  background-color: #002664;
   display: inline-block;
   padding: 14px 40px;
   color: #fff;
   border-radius: 45px;
-  border: 1px solid #4069eb;
+  border: 1px solid #002664;
 }
 
 .app_btn:hover {
@@ -7032,7 +7032,7 @@ button:focus {
 .perfect_solution_area .perfect_solution_left .per_solution_content .btn_three {
   margin-top: 0px;
   font-size: 15px;
-  background: #5f51fb;
+  background: #002664;
   padding: 15px 42px;
 }
 
@@ -12392,8 +12392,8 @@ button:focus {
 .details_content .btn_three {
   min-width: 150px;
   text-align: center;
-  background: #5e2ced;
-  border-color: #5e2ced;
+  background: #002664;
+  border-color: #002664;
   color: #fff;
 }
 
@@ -12569,7 +12569,7 @@ button:focus {
 .apply_form .btn_three {
   font-size: 14px;
   font-weight: 500;
-  background: #5e2ced;
+  background: #002664;
   padding: 14px 37px;
   border-radius: 3px;
   -webkit-transition: all 0.3s linear;
@@ -13345,15 +13345,15 @@ button:focus {
 .contact_form_box .btn_three {
   min-width: 180px;
   text-align: center;
-  background: #5e2ced;
-  border-color: #5e2ced;
+  background: #002664;
+  border-color: #002664;
   margin-top: 0px;
   float: right;
 }
 
 .contact_form_box .btn_three:hover {
   background: transparent;
-  color: #5e2ced;
+  color: #002664;
 }
 
 .mapbox2 {
@@ -26528,26 +26528,152 @@ a .h_head:hover {
 
 /* Add this to your CSS file */
 
-.falling-title {
-  display: flex;
-  flex-direction: column;
+ul.list {
   position: relative;
+  display: inline-block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.title {
-  transform: translateY(0);
-  transition: transform 4s ease-in-out;
-  position: absolute;
+ul.list li {
+  float: left;
+  padding-left: 20px;
   opacity: 0;
 }
 
-.title.visible {
-  transform: translateY(0);
+ul.list li.visible {
   opacity: 1;
 }
+#scroll-container {
+  overflow: hidden;
+}
 
-.title.hidden {
-  transform: translateY(-100%);
+#scroll-text {
+  display: flex;
+  white-space: nowrap;
+  animation: my-animation 20s linear infinite;
+  /* width: 450px; */
+}
+
+/* .text {
+  width: 100%;
+  padding: 0 10px;
+} */
+
+@keyframes my-animation {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.scroll-tex {
+  /* width: 100%; */
+  overflow: hidden;
+  display: flex;
+  white-space: nowrap;
+}
+
+.text {
+  font-size: 20px;
+  color: #002664;
+  text-transform: uppercase;
+  font-weight: bold;
+  animation: animate_text 20s linear infinite;
+  white-space: nowrap;
+  display: flex;
+}
+
+/* .text span {
+  margin-right: 60px; 
+} */
+
+@keyframes animate_text {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* .service-on-mobile {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  height: 500px;
+} */
+
+.service-on-mobile .service-image {
+  width: 100%; /* Make the image responsive */
+  max-width: 450px; /* Set a maximum width for larger screens */
+  height: auto; /* Maintain the aspect ratio */
+  border-radius: 10px;
+}
+
+/* Additional styling for a cleaner look */
+.service-on-mobile .container {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.reviews-container {
+  text-align: center;
+}
+
+.reviews-carousel {
+  position: relative;
+  overflow: hidden;
+}
+
+.reviews-list {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+  margin: 0 20px; /* Adjust the negative margin to create space */
+}
+
+.review-item {
+  flex: 0 0 100%;
+  box-sizing: border-box;
+  padding: 0 20px; /* Keep the padding for reviews */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a box shadow to reviews */
+  color: black !important; /* Set text color to black */
+}
+
+.review-name {
+  color: #000; /* Set name color to black */
+}
+
+.review-rating {
+  color: #ffd700; /* Set star color to gold */
+}
+
+.arrow-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #002664; /* Set arrow background color */
+  color: #fff; /* Set arrow text color to white */
+  padding: 5px; /* Keep the padding for buttons reasonable */
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+  font-size: 20px;
+}
+
+.arrow-button:hover {
+  background-color: #001a40; /* Set hover background color for arrows */
+}
+
+.arrow-button:first-child {
+  left: 15px;
+}
+
+.arrow-button:last-child {
+  right: 15px;
 }
 
 /*============= chat_clients_area css ===========*/

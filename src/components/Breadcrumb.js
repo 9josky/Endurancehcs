@@ -18,7 +18,7 @@ function Breadcrumb({
     <section
       style={{
         backgroundColor: "#002664",
-        height: "30vh",
+        height: "40vh",
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",

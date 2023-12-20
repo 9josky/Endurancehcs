@@ -15,7 +15,7 @@ function HRService() {
       <div className="container">
         <h2 className="f_size_30 f_600 t_color3 l_height45 text-center mb_90">
           With utmost compassion we provide the following services to our
-          clients:.
+          clients:
         </h2>
         <div className="row p_service_info">
           {ServiceData.HRService.map((item) => {

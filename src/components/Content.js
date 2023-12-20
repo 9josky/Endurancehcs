@@ -10,22 +10,46 @@ function Content({
   list,
   showButton,
   innerTitle,
+  orderedList,
 }) {
   return (
     <div style={{ paddingTop: "10px" }}>
-      <h1>{header}</h1>
-      <p>{content}</p>
+      <h1 style={{ textAlign: "center", color: "black" }}>{header}</h1>
+      <p style={{ color: "black", fontSize: "18px" }}>{content}</p>
       <div
         // className="falling-title-container"
-        style={{ height: "10px", margin: "20px 0" }}
+        style={{
+          // height: "10px",
+          display: "flex",
+          alignItems: "center",
+          margin: "15px 0",
+        }}
       >
         {innerTitle}
       </div>
-      <ul>{list}</ul>
+      <ul
+        style={{
+          color: "black",
+          textTransform: "capitalize",
+          fontSize: "18px",
+        }}
+      >
+        {list}
+      </ul>
+      <ol
+        style={{
+          color: "black",
+          textTransform: "capitalize",
+          fontSize: "18px",
+        }}
+      >
+        {orderedList}
+      </ol>
       {showButton && (
         <div
-          className="action_btn d-flex align-items-center mt_40 wow fadeInRight"
+          className="action_btn d-flex mt_10 wow fadeInRight"
           data-wow-delay="0.6s"
+          style={{ justifyContent: "center" }}
         >
           <a href={link} className="btn_hover app_btn">
             {buttn}

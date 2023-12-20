@@ -39,10 +39,13 @@ function ServiceContent() {
         showButton={true}
         innerTitle={<FallingTitle />}
       />
-      <div className="image-container">
+      <div
+        className="image-container"
+        // style={{ zIndex: "55", position: "relative" }}
+      >
         <img
           src={require("../img/caregiver.jpg")}
-          alt="Caregiver"
+          alt="image by freepik"
           className="rounded-image"
         />
       </div>

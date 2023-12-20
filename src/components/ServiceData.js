@@ -86,7 +86,7 @@ const ServiceData = {
       HRtitles: "Personal Care",
       HRdescription:
         "Bathing, Grooming, Personal hygiene, Mobility assistance, Meal preparations, Bed preparation, Incontinence care, Laundry, Administrative assistance, Medication monitoring and reminder, etc.",
-      Hicon: "panel",
+      Hicon: "recipient_4514175.png",
       rclass: "pr_70",
       iclass: "icon_one",
     },
@@ -95,7 +95,7 @@ const ServiceData = {
       HRtitles: "Respite Care",
       HRdescription:
         "Day and overnight respite care, Medical appointments escort, Movies companion, etc.",
-      Hicon: "layout-grid2",
+      Hicon: "medical-assistance_4514120.png",
       rclass: "pl_50 pr_20",
       iclass: "icon_two",
     },
@@ -104,7 +104,7 @@ const ServiceData = {
       HRtitles: "Cosmetic Care",
       HRdescription:
         "Massages and range motion activities, Helping with hairdressing and barbing, etc.",
-      Hicon: "fullscreen",
+      Hicon: "assistance_4514278.png",
       rclass: "pl_70",
       iclass: "icon_three",
     },
@@ -113,7 +113,7 @@ const ServiceData = {
       HRtitles: "Other Services",
       HRdescription:
         "Running errands, In and out of town accompaniment, Pet care, Escort to stores, parks, and community events, Fall prevention and general safety guidance, Transportation, Wound care, Skilled nursing care, etc.",
-      Hicon: "vector",
+      Hicon: "care_7924590.png",
       rclass: "pr_70",
       iclass: "icon_four",
     },

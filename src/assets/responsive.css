@@ -2896,6 +2896,10 @@
 }
 
 @media (max-width: 768px) {
+  .service-on-mobile {
+    flex-direction: column-reverse;
+  }
+
   .sec_title br,
   .prototype_service_info h2 br,
   .hosting_title h2 br {

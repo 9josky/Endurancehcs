@@ -44,13 +44,23 @@ function Footer() {
               </p>
               <p>
                 <span style={{ color: "white" }}>Phone:</span>{" "}
-                <a
-                  href="tel: 2045640051"
-                  className="f_400"
-                  style={{ color: "white" }}
-                >
-                  (204) 564 0051
-                </a>
+                <div>
+                  <a
+                    href="tel: 2405640051"
+                    className="f_400"
+                    style={{ color: "white" }}
+                  >
+                    (240) 564 0051
+                  </a>
+                  /
+                  <a
+                    href="tel: 3014908417"
+                    className="f_400"
+                    style={{ color: "white" }}
+                  >
+                    (301) 490 8417
+                  </a>
+                </div>
               </p>
             </div>
             <div className="f_social_icon_two text-center">

@@ -2,6 +2,8 @@ import React from "react";
 import { useSpring, animated } from "react-spring";
 
 function HRServiceItems({ HRtitle, HRdescription, Hicon, rclass, iclass }) {
+  console.log("Hicon:", Hicon);
+
   // Define the spring animation
   const revealAnimation = useSpring({
     opacity: 1,
@@ -15,11 +17,18 @@ function HRServiceItems({ HRtitle, HRdescription, Hicon, rclass, iclass }) {
       {/* Use the animated.div component for animated elements */}
       <animated.div style={revealAnimation}>
         <div className={`p_service_item ${rclass}`}>
-          <div className={`icon ${iclass}`}>
-            <i className={`ti-${Hicon}`}></i>
+          <div>
+            <img
+              src={require(`../img/${Hicon}`)}
+              alt="Image by freepik"
+              width="60px"
+              height="60px"
+            />
           </div>
           <h5 className="f_600 f_p t_color3">{HRtitle}</h5>
-          <p className="f_400">{HRdescription}</p>
+          <p className="f_400" style={{ color: "black", fontSize: "18px" }}>
+            {HRdescription}
+          </p>
         </div>
       </animated.div>
     </div>
