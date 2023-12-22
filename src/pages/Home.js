@@ -9,10 +9,11 @@ import ServiceContent from "../components/ServiceContent";
 import Footer from "../components/Footer";
 import WhyChooseUs from "../components/WhyChooseUs";
 import HomeReview from "../components/HomeReview";
+import GettingStarted from "../components/GettingStarted";
 
 function Home() {
   return (
-    <div className="body_wrapper">
+    <div className="body_wrapper" style={{ gap: "15px" }}>
       <NavContact />
       <CustomeNavBar
         slogo="sticky_logo"
@@ -25,6 +26,7 @@ function Home() {
       <ServiceContent />
       <WhyChooseUs />
       <HomeReview />
+      <GettingStarted />
       <Footer />
       {/* <HomeService /> */}
     </div>

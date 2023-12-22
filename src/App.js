@@ -7,6 +7,10 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Team from "./pages/Team";
 import Career from "./pages/Career";
+import PersonalCare from "./pages/PersonalCare";
+import RespiteCare from "./pages/RespiteCare";
+import CosmeticCare from "./pages/CosmeticCare";
+import OtherServices from "./pages/OtherServices";
 
 function App() {
   return (
@@ -17,6 +21,10 @@ function App() {
       <Route path="/contact" element={<Contact />} />
       <Route path="/team" element={<Team />} />
       <Route path="/career" element={<Career />} />
+      <Route path="/services/personal" element={<PersonalCare />} />
+      <Route path="/services/respite" element={<RespiteCare />} />
+      <Route path="/services/cosmetic" element={<CosmeticCare />} />
+      <Route path="/services/others" element={<OtherServices />} />
     </Routes>
   );
 }

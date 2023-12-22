@@ -47,7 +47,14 @@ function WhyChooseUs() {
     </span>,
   ];
   return (
-    <div className="container" style={{ marginBottom: "15px" }}>
+    <div
+      className="container new_startup_banner_copy"
+      style={{
+        marginBottom: "100px",
+        backgroundColor: "#002664",
+        position: "relative",
+      }}
+    >
       <Content
         header="Why Choose Endurance?"
         orderedList={why.map((item, index) => (
@@ -55,8 +62,10 @@ function WhyChooseUs() {
             {item}
           </li>
         ))}
+        textColor="white"
       />
       <Content
+        textColor="white"
         header="Experience the Endurance Difference:"
         content="Give us a call today to embark on a journey of impeccable and compassionate healthcare services. Your comfort zone is our priority, and we can't wait to serve you in the place you call home."
       />

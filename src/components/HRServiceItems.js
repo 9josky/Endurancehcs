@@ -1,7 +1,14 @@
 import React from "react";
 import { useSpring, animated } from "react-spring";
 
-function HRServiceItems({ HRtitle, HRdescription, Hicon, rclass, iclass }) {
+function HRServiceItems({
+  HRtitle,
+  HRdescription,
+  Hicon,
+  rclass,
+  iclass,
+  image,
+}) {
   console.log("Hicon:", Hicon);
 
   // Define the spring animation
@@ -13,7 +20,16 @@ function HRServiceItems({ HRtitle, HRdescription, Hicon, rclass, iclass }) {
   });
 
   return (
-    <div className="col-lg-4 col-sm-6">
+    <div
+      className="container"
+      style={{
+        marginBottom: "18px",
+        marginTop: "18px",
+        display: "flex",
+        justifyContent: "space-between",
+        alignItems: "center",
+      }}
+    >
       {/* Use the animated.div component for animated elements */}
       <animated.div style={revealAnimation}>
         <div className={`p_service_item ${rclass}`}>
@@ -31,6 +47,17 @@ function HRServiceItems({ HRtitle, HRdescription, Hicon, rclass, iclass }) {
           </p>
         </div>
       </animated.div>
+      <div
+        className="image-container"
+        // style={{ zIndex: "55", position: "relative" }}
+      >
+        <img
+          src={require(`../img/${image}`)}
+          alt="image by freepik"
+          className="rounded-image"
+          style={{ width: "300px", height: "300px", borderRadius: "10px" }}
+        />
+      </div>
     </div>
   );
 }

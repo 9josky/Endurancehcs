@@ -36,7 +36,7 @@ const Reviews = ({ reviews, heading }) => {
   return (
     <div
       className="reviews-container container"
-      style={{ marginTop: "18px", marginBottom: "18px" }}
+      style={{ marginTop: "18px", marginBottom: "100px" }}
     >
       <h2 style={{ color: "black" }}>{heading}</h2>
       {reviews.length > 0 ? (

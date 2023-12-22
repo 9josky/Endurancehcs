@@ -4511,6 +4511,34 @@ button:focus {
   top: 0;
 }
 
+.new_startup_banner_copy {
+  background: url("../img/new/startup_banner_bg.png") no-repeat scroll center
+    bottom;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  z-index: -1;
+  top: 0;
+}
+
+.getting_started_background {
+  background: url("../img/female-nurse-taking-care-elderly-person.jpg")
+    rgba(0, 38, 100, 0.3);
+  position: absolute;
+  /* min-width: 100%;
+  min-height: 100%; */
+  background-size: cover;
+  z-index: -1;
+  /* opacity: 0.5; */
+  background-blend-mode: multiply;
+}
+
+.blend-background {
+  mix-blend-mode: multiply;
+}
+
 .new_startup_banner_area .new_startup_img {
   padding-right: 70px;
   position: relative;
@@ -26615,7 +26643,7 @@ ul.list li.visible {
 /* Additional styling for a cleaner look */
 .service-on-mobile .container {
   padding: 20px;
-  background-color: #fff;
+  /* background-color: #fff; */
   border-radius: 10px;
   margin-bottom: 15px;
 }

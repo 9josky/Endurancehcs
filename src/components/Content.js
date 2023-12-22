@@ -11,11 +11,17 @@ function Content({
   showButton,
   innerTitle,
   orderedList,
+  textColor,
 }) {
+  const defaultTextColor = "black";
   return (
-    <div style={{ paddingTop: "10px" }}>
-      <h1 style={{ textAlign: "center", color: "black" }}>{header}</h1>
-      <p style={{ color: "black", fontSize: "18px" }}>{content}</p>
+    <div style={{ paddingTop: "10px" }} className="container">
+      <h1 style={{ textAlign: "center", color: textColor || defaultTextColor }}>
+        {header}
+      </h1>
+      <p style={{ color: textColor || defaultTextColor, fontSize: "18px" }}>
+        {content}
+      </p>
       <div
         // className="falling-title-container"
         style={{
@@ -29,7 +35,7 @@ function Content({
       </div>
       <ul
         style={{
-          color: "black",
+          color: textColor || defaultTextColor,
           textTransform: "capitalize",
           fontSize: "18px",
         }}
@@ -38,7 +44,7 @@ function Content({
       </ul>
       <ol
         style={{
-          color: "black",
+          color: textColor || defaultTextColor,
           textTransform: "capitalize",
           fontSize: "18px",
         }}

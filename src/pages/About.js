@@ -7,6 +7,7 @@ import AgencyAbout from "../components/AgencyAbout";
 import NavContact from "../components/NavContact";
 import OurStoryContent from "../components/OurStoryContent";
 import Footer from "../components/Footer";
+import WhatSetsUsApart from "../components/WhatSetsUsApart";
 
 function About() {
   return (
@@ -26,6 +27,7 @@ function About() {
       />
       <OurStoryContent />
       <AboutUsInfo />
+      <WhatSetsUsApart />
       {/* <AgencyAbout ServiceData={ServiceData} /> */}
       <Footer />
     </div>

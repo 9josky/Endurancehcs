@@ -1,14 +1,34 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link, NavLink } from "react-router-dom";
 import Sticky from "react-stickynode";
 import logo1 from "../img/No5.svg";
 
 function CustomeNavBar({ mClass, nClass, cClass, slogo, hbtnClass }) {
   const [isNavOpen, setIsNavOpen] = useState(false);
+  const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const dropdownRef = useRef(null);
 
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
   };
+
+  const toggleServices = () => {
+    setIsServicesOpen(!isServicesOpen);
+  };
+
+  const closeDropdown = (event) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      setIsServicesOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("click", closeDropdown);
+
+    return () => {
+      document.removeEventListener("click", closeDropdown);
+    };
+  }, []);
 
   return (
     <Sticky top={0} innerZ={9999} activeClass="navbar_fixed">
@@ -58,6 +78,47 @@ function CustomeNavBar({ mClass, nClass, cClass, slogo, hbtnClass }) {
                   >
                     Service
                   </NavLink>
+                </li>
+                <li className="nav-item dropdown" ref={dropdownRef}>
+                  <span
+                    className="nav-link dropdown-toggle"
+                    onClick={toggleServices}
+                    role="button"
+                  >
+                    Services
+                  </span>
+                  <div
+                    className={`dropdown-menu ${isServicesOpen ? "show" : ""}`}
+                  >
+                    <Link
+                      to="/services/personal"
+                      className="dropdown-item"
+                      onClick={toggleNav}
+                    >
+                      Personal Care
+                    </Link>
+                    <Link
+                      to="/services/respite"
+                      className="dropdown-item"
+                      onClick={toggleNav}
+                    >
+                      Respite Care
+                    </Link>
+                    <Link
+                      to="/services/cosmetic"
+                      className="dropdown-item"
+                      onClick={toggleNav}
+                    >
+                      Cosmetic Care
+                    </Link>
+                    <Link
+                      to="/services/others"
+                      className="dropdown-item"
+                      onClick={toggleNav}
+                    >
+                      Other Services
+                    </Link>
+                  </div>
                 </li>
                 <li className="nav-item">
                   <NavLink

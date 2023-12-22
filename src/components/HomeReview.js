@@ -5,7 +5,7 @@ import Reviews from "./Reviews";
 const HomeReview = () => {
   const reviewsData = [
     {
-      name: "Janet Akinduro",
+      name: "Janet",
       rating: 4,
       comment:
         "I recently had the pleasure of using Endurance Healthcare Services, and I must say it was an excellent experience. The team at Endurance provided top-notch service, exceeding my expectations. The caregivers were not only professional but also compassionate, creating a comfortable environment for me. The attention to detail in addressing my healthcare needs was remarkable. I would highly recommend Endurance Healthcare Services to anyone seeking quality and reliable healthcare at home.",

@@ -4,45 +4,51 @@ import Content from "./Content";
 function OurStoryContent() {
   return (
     <div
-      className="container service-on-mobile"
+      className="container service-on-mobile new_startup_banner_copy"
       style={{
-        marginBottom: "15px",
-        marginTop: "15px",
+        marginBottom: "100px",
+        marginTop: "100px",
+        padding: "10px 10px",
         display: "flex",
-        justifyContent: "space-between",
+        gap: "10px",
+        // justifyContent: "space-between",
         alignItems: "center",
+        backgroundColor: "#002664",
+        position: "relative",
+        // height: "500px",
       }}
     >
       <Content
-        // header="Our story"
+        header="A Journey Fueled by Compassion"
         content={
-          <div>
-            <p style={{ color: "black", fontSize: "18px" }}>
+          <>
+            <p style={{ color: "white", fontSize: "18px" }}>
               Endurance Healthcare Services was born out of the deep love that
               the founder and President, Taiwo Onanuga, has for the elderly and
               those individuals facing challenges preventing them from carrying
               out simple daily activities we often take for granted.
             </p>
-            <p style={{ color: "black", fontSize: "18px" }}>
+            <p style={{ color: "white", fontSize: "18px" }}>
               His journey as a caregiver began at NCIA Baltimore in 2003, where
               he worked as a caregiver for three individuals who heavily relied
               on his compassionate caregiving to navigate each day of their
               lives.
             </p>
-            <p style={{ color: "black", fontSize: "18px" }}>
+            <p style={{ color: "white", fontSize: "18px" }}>
               He later worked for the state of Maryland at Spring Grove Hospital
               in Catonsville, MD, earning various awards for his outstanding
               performances in taking care of mentally challenged individuals.
             </p>
-            <p style={{ color: "black", fontSize: "18px" }}>
+            <p style={{ color: "white", fontSize: "18px" }}>
               However, it was his final caregiving experience at Athelas
               Institute in Columbia, MD, that inspired him to establish
               Endurance Healthcare Services, aiming to broaden his impact in the
               field of caring for those in need.
             </p>
-          </div>
+          </>
         }
         showButton={false}
+        textColor="white"
       />
       <div
         className="image-container"
@@ -52,7 +58,7 @@ function OurStoryContent() {
           src={require("../img/CEO.jpeg")}
           alt="image by freepik"
           // className="rounded-image"
-          style={{ width: "450px", height: "300px", borderRadius: "10px" }}
+          style={{ width: "350px", height: "300px", borderRadius: "10px" }}
         />
       </div>
     </div>
