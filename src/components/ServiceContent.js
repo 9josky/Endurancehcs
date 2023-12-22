@@ -18,7 +18,7 @@ function ServiceContent() {
 
   return (
     <div
-      className="container"
+      className="container service-on-mobile"
       style={{
         marginBottom: "100px",
         display: "flex",
@@ -33,10 +33,6 @@ function ServiceContent() {
         list={servicesList.map((service, index) => (
           <li key={index}>{service}</li>
         ))}
-        link="/service"
-        buttn="Learn More"
-        icon={<i className="your-icon-class"></i>}
-        showButton={true}
         innerTitle={<FallingTitle />}
       />
       <div
@@ -46,7 +42,8 @@ function ServiceContent() {
         <img
           src={require("../img/caregiver.jpg")}
           alt="image by freepik"
-          className="rounded-image"
+          // className="rounded-image"
+          style={{ width: "450px", height: "300px", borderRadius: "10px" }}
         />
       </div>
     </div>

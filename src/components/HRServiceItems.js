@@ -54,8 +54,8 @@ function HRServiceItems({
         <img
           src={require(`../img/${image}`)}
           alt="image by freepik"
-          className="rounded-image"
-          style={{ width: "300px", height: "300px", borderRadius: "10px" }}
+          className="rounded-image-copy"
+          style={{ width: "650px", height: "500px", borderRadius: "10px" }}
         />
       </div>
     </div>

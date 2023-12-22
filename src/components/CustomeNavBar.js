@@ -68,17 +68,6 @@ function CustomeNavBar({ mClass, nClass, cClass, slogo, hbtnClass }) {
               id="navbarSupportedContent"
             >
               <ul className={`navbar-nav menu ml-auto ${nClass}`}>
-                <li className="nav-item">
-                  <NavLink
-                    title="Our Service"
-                    className="nav-link"
-                    to="/service"
-                    exact
-                    onClick={toggleNav}
-                  >
-                    Service
-                  </NavLink>
-                </li>
                 <li className="nav-item dropdown" ref={dropdownRef}>
                   <span
                     className="nav-link dropdown-toggle"

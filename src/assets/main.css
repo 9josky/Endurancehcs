@@ -7881,9 +7881,18 @@ button:focus {
   border-radius: 10px;
 }
 
+.rounded-image-copy {
+  
+  border-radius: 10px;
+}
+
 /* Hide the image on mobile devices */
 @media (max-width: 767px) {
   .rounded-image {
+    display: none;
+  }
+
+  .rounded-image-copy {
     display: none;
   }
 }

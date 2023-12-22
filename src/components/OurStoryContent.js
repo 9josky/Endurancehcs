@@ -7,7 +7,7 @@ function OurStoryContent() {
       className="container service-on-mobile new_startup_banner_copy"
       style={{
         marginBottom: "100px",
-        marginTop: "100px",
+        marginTop: "5px",
         padding: "10px 10px",
         display: "flex",
         gap: "10px",
@@ -58,7 +58,12 @@ function OurStoryContent() {
           src={require("../img/CEO.jpeg")}
           alt="image by freepik"
           // className="rounded-image"
-          style={{ width: "350px", height: "300px", borderRadius: "10px" }}
+          style={{
+            width: "350px",
+            height: "300px",
+            borderRadius: "10px",
+            marginTop: "10px",
+          }}
         />
       </div>
     </div>

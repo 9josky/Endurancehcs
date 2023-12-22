@@ -2898,6 +2898,7 @@
 @media (max-width: 768px) {
   .service-on-mobile {
     flex-direction: column-reverse;
+    margin-top: 0;
   }
 
   .sec_title br,
