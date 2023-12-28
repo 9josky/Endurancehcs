@@ -3,6 +3,10 @@ import NavContact from "../components/NavContact";
 import CustomeNavBar from "../components/CustomeNavBar";
 import Breadcrumb from "../components/Breadcrumb";
 import HRServiceItems from "../components/HRServiceItems";
+import PeronalCareContent from "../components/PeronalCareContent";
+import QuickMessage from "../components/QuickMessage";
+import Footer from "../components/Footer";
+import WhyChooseUs from "../components/WhyChooseUs";
 
 function PersonalCare() {
   const title = "Personal Care";
@@ -29,6 +33,10 @@ function PersonalCare() {
         iclass={iclass}
         image="2150796822.jpg"
       />
+      <PeronalCareContent />
+      <WhyChooseUs />
+      <QuickMessage inquiry="Inquire About Our Personal Care" />
+      <Footer />
     </div>
   );
 }

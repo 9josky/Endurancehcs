@@ -10,10 +10,13 @@ import Footer from "../components/Footer";
 import WhyChooseUs from "../components/WhyChooseUs";
 import HomeReview from "../components/HomeReview";
 import GettingStarted from "../components/GettingStarted";
+import WhyWeDiffer from "../components/WhyWeDiffer";
+import Compatibility from "../components/Compatibility";
+import ContinuityCare from "../components/ContinuityCare";
 
 function Home() {
   return (
-    <div className="body_wrapper" style={{ gap: "15px" }}>
+    <div className="body_wrapper">
       <NavContact />
       <CustomeNavBar
         slogo="sticky_logo"
@@ -24,7 +27,9 @@ function Home() {
       <EventTeam />
       <WelcomeContent />
       <ServiceContent />
-      <WhyChooseUs />
+      <Compatibility />
+      <ContinuityCare />
+      <WhyWeDiffer />
       <HomeReview />
       <GettingStarted />
       <Footer />

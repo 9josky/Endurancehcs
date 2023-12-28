@@ -3,6 +3,10 @@ import NavContact from "../components/NavContact";
 import CustomeNavBar from "../components/CustomeNavBar";
 import Breadcrumb from "../components/Breadcrumb";
 import HRServiceItems from "../components/HRServiceItems";
+import WhyChooseUs from "../components/WhyChooseUs";
+import OtherServicesContent from "../components/OtherServicesContent";
+import QuickMessage from "../components/QuickMessage";
+import Footer from "../components/Footer";
 
 function OtherServices() {
   const title = "Other Services";
@@ -29,6 +33,10 @@ function OtherServices() {
         iclass={iclass}
         image="32202.jpg"
       />
+      <OtherServicesContent />
+      <WhyChooseUs />
+      <QuickMessage inquiry="Inquire About Our Other Services" />
+      <Footer />
     </div>
   );
 }

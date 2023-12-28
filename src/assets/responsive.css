@@ -2896,6 +2896,13 @@
 }
 
 @media (max-width: 768px) {
+  /* .container {
+    margin: 10px;
+  } */
+  .care_mobile {
+    /* display: flex; */
+    flex-direction: column;
+  }
   .service-on-mobile {
     flex-direction: column-reverse;
     margin-top: 0;

@@ -3,6 +3,10 @@ import NavContact from "../components/NavContact";
 import CustomeNavBar from "../components/CustomeNavBar";
 import Breadcrumb from "../components/Breadcrumb";
 import HRServiceItems from "../components/HRServiceItems";
+import RespiteCareContent from "../components/RespiteCareContent";
+import QuickMessage from "../components/QuickMessage";
+import Footer from "../components/Footer";
+import WhyChooseUs from "../components/WhyChooseUs";
 
 function RespiteCare() {
   const title = "Respite Care";
@@ -29,6 +33,10 @@ function RespiteCare() {
         iclass={iclass}
         image="2150796806.jpg"
       />
+      <RespiteCareContent />
+      <WhyChooseUs />
+      <QuickMessage inquiry="Inquire About Our Respite Care" />
+      <Footer />
     </div>
   );
 }

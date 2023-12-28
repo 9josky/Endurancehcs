@@ -21,7 +21,7 @@ function HRServiceItems({
 
   return (
     <div
-      className="container"
+      className="container care_mobile"
       style={{
         marginBottom: "18px",
         marginTop: "18px",
@@ -54,7 +54,7 @@ function HRServiceItems({
         <img
           src={require(`../img/${image}`)}
           alt="image by freepik"
-          className="rounded-image-copy"
+          // className="rounded-image-copy"
           style={{ width: "650px", height: "500px", borderRadius: "10px" }}
         />
       </div>

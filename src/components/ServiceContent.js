@@ -20,7 +20,7 @@ function ServiceContent() {
     <div
       className="container service-on-mobile"
       style={{
-        marginBottom: "100px",
+        marginBottom: "50px",
         display: "flex",
         justifyContent: "space-between",
         alignItems: "center",

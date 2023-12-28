@@ -3,6 +3,10 @@ import NavContact from "../components/NavContact";
 import CustomeNavBar from "../components/CustomeNavBar";
 import Breadcrumb from "../components/Breadcrumb";
 import HRServiceItems from "../components/HRServiceItems";
+import CosmeticCareContent from "../components/CosmeticCareContent";
+import QuickMessage from "../components/QuickMessage";
+import Footer from "../components/Footer";
+import WhyChooseUs from "../components/WhyChooseUs";
 
 function CosmeticCare() {
   const title = "Cosmetic Care";
@@ -29,6 +33,10 @@ function CosmeticCare() {
         iclass={iclass}
         image="medium-shot-nurse-man-posing.jpg"
       />
+      <CosmeticCareContent />
+      <WhyChooseUs />
+      <QuickMessage inquiry="Inquire About Our Cosmetic Care" />
+      <Footer />
     </div>
   );
 }
