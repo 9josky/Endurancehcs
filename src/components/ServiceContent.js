@@ -43,7 +43,7 @@ function ServiceContent() {
           src={require("../img/caregiver.jpg")}
           alt="image by freepik"
           // className="rounded-image"
-          style={{ width: "450px", height: "300px", borderRadius: "10px" }}
+          style={{ width: "450px", height: "400px", borderRadius: "10px" }}
         />
       </div>
     </div>

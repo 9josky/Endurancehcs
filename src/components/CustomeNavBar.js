@@ -114,7 +114,6 @@ function CustomeNavBar({ mClass, nClass, cClass, slogo, hbtnClass }) {
                     title="Our Story"
                     className="nav-link"
                     to="/story"
-                    exact
                     onClick={toggleNav}
                   >
                     Our Story
@@ -122,10 +121,19 @@ function CustomeNavBar({ mClass, nClass, cClass, slogo, hbtnClass }) {
                 </li>
                 <li className="nav-item">
                   <NavLink
+                    title="Blog"
+                    className="nav-link"
+                    to="/blog"
+                    onClick={toggleNav}
+                  >
+                    Blog
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink
                     title="Team"
                     className="nav-link"
                     to="/team"
-                    exact
                     onClick={toggleNav}
                   >
                     Team
@@ -136,7 +144,6 @@ function CustomeNavBar({ mClass, nClass, cClass, slogo, hbtnClass }) {
                     title="Career Opportunities"
                     className="nav-link"
                     to="/career"
-                    exact
                     onClick={toggleNav}
                   >
                     Career
@@ -147,7 +154,6 @@ function CustomeNavBar({ mClass, nClass, cClass, slogo, hbtnClass }) {
                     title="Contact Us"
                     className="nav-link"
                     to="/contact"
-                    exact
                     onClick={toggleNav}
                   >
                     Contact Us

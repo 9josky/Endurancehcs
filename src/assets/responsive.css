@@ -2896,6 +2896,20 @@
 }
 
 @media (max-width: 768px) {
+  .blog-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .blog-image {
+    max-width: 100%;
+    max-height: none;
+    margin-bottom: 20px;
+  }
+
+  .blog-text {
+    margin-left: 0;
+  }
   /* .container {
     margin: 10px;
   } */

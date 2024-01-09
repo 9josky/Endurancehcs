@@ -11,6 +11,8 @@ import PersonalCare from "./pages/PersonalCare";
 import RespiteCare from "./pages/RespiteCare";
 import CosmeticCare from "./pages/CosmeticCare";
 import OtherServices from "./pages/OtherServices";
+import Blog from "./pages/Blog";
+import ReadMoreDetails from "./components/ReadMoreDetails";
 
 function App() {
   return (
@@ -20,11 +22,13 @@ function App() {
       <Route path="/story" element={<About />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/team" element={<Team />} />
+      <Route path="/blog" element={<Blog />} />
       <Route path="/career" element={<Career />} />
       <Route path="/services/personal" element={<PersonalCare />} />
       <Route path="/services/respite" element={<RespiteCare />} />
       <Route path="/services/cosmetic" element={<CosmeticCare />} />
       <Route path="/services/others" element={<OtherServices />} />
+      <Route path="/readmore/:id" element={<ReadMoreDetails />} />
     </Routes>
   );
 }

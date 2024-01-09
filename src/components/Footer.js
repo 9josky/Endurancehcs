@@ -42,7 +42,7 @@ function Footer() {
                   ehcsonline1@gmail.com
                 </a>
               </p>
-              <p>
+              <div>
                 <span style={{ color: "white" }}>Phone:</span>{" "}
                 <div>
                   <a
@@ -61,7 +61,7 @@ function Footer() {
                     (301) 490 8417
                   </a>
                 </div>
-              </p>
+              </div>
             </div>
             <div className="f_social_icon_two text-center">
               {FooterData.socialIcon.map((item) => {

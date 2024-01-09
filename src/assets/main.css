@@ -7882,7 +7882,6 @@ button:focus {
 }
 
 .rounded-image-copy {
-  
   border-radius: 10px;
 }
 
@@ -26711,6 +26710,62 @@ ul.list li.visible {
 
 .arrow-button:last-child {
   right: 15px;
+}
+
+.blog-container {
+  /* max-width: 800px; */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Title styling */
+.blog-container h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+/* Meta information styling */
+.blog-meta {
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Content layout for larger screens */
+.blog-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Image styling */
+.blog-image {
+  max-width: 400px; /* Adjust based on your design */
+  max-height: 200px; /* Adjust based on your design */
+}
+
+/* Text content styling */
+.blog-text {
+  /* flex-grow: 1; */
+  margin-left: 20px;
+}
+
+.truncate {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: wrap;
+}
+
+.blog-post {
+  list-style: none;
+  margin-bottom: 40px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content-header {
+  text-align: center;
 }
 
 /*============= chat_clients_area css ===========*/
